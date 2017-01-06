@@ -1,0 +1,45 @@
+CPSC 453 
+Assignment 4
+Cameron Hardy
+ID 10084560
+Submitted November 22nd, 2016
+
+I took screenshots of all my scenes, but most of them are animated, so check em out.
+Also I semi-implemented relfections/refractions, but GLSL doesn't allow recursion and it didn't work so the code for reflections is currently unused.
+
+I didn't do any file parsing, so every scene is hard coded into it's own fragment shader file.
+
+You can move the camera around, or let the camera follow a set path. FOV can be controlled or animated. Object positions, colors, and lights can all be animated. The first scene can be anit-aliased, but it takes a while to render (it does a 16x supersampling of every pixel). Finally there is also a 3d anaglyph mode that kind of works.
+
+Everything is mostly realtime, except for 16x anti-aliasing (obviously XD).
+
+If you decide to render it, the first time always takes a really long time. Even though the anti-aliasing is contained within an if statement, it seems to still run and slow down the initial render. Just give it a minute, wait unitl you see the ball start moving.
+
+To run:
+Open the folder in terminal and type 'make'
+Type './a.out'
+
+Press 1-4 to select your scene.
+Use wasd to move across the x and z axis.
+Use the up/down arrows to move across the y axis.
+Press =/- to increase/decrease the FOV, respectively.
+Press left/right to change camera modes/motion.
+Press space for 3d anaglyph. Bust out your 3d glasses from that Spy Kids 3d movie, put em on and enjoy.
+ON SCENE ONE ONLY Press f to toggle anti-aliasing.
+Press escape to quit.
+
+Scene 1 has two lights, one cold, one warm. The ball hovers up and down.
+Scene 2 also has two lights, one cold, one warm. The cone's color pulsates between shades of green.
+Scene 3 has two lights, one of which pulsate between colors and brightness. The camera moves up and down by default. Put on some vaporwave and enjoy the A E S T H E T I C.
+Scene 4 is just a trip. Think super hexagon.
+
+As far as collaborators go, I think I talked to Susant about rotations and reflections. 
+
+
+
+
+
+
+
+
+The end.
